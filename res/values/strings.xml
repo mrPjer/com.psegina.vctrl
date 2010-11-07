@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Voltage Control</string>
+	<string name="appDescription">Allows users to change their phone\'s voltage table on the fly.</string>
+
+		<string name="legalTitle">WARNING</string>
+		<string name="legalBody">
+
+This application manages various hardware parameters of your phone\'s voltage controller. While there are various benefits to voltage manipulation,
+		careless use can as well result in damaged hardware. It is up to you to decide how much you want to deter from the original values, however, be advised
+		that neither the creator of this app, nor the creator of the module are responsible for damage caused by the misuse of this app.
+If you need any help with voltage manipulation, feel free to read the tutorial by pressing MENU and then selecting \"Tutorial\". \n\n
+Created by Petar Šegina\n
+Built on the undervolting module by Iscaela@xda-developers \n</string>
+
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <!-- Table headers -->
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	>
+    		<TextView
+    			android:layout_height="fill_parent"
+    			android:layout_width="wrap_content"
+    			android:layout_weight="1"
+    			android:gravity="center"
+    			android:text="Original value"
+    			android:textStyle="bold"
+    			android:textSize="16sp"
+    			android:textColor="#FFFFFF"
+    			/>
+    		<TextView
+    			android:layout_height="fill_parent"
+    			android:layout_width="wrap_content"
+    			android:layout_weight="1"
+    			android:gravity="center"
+    			android:text="Current Value"
+    			android:textStyle="bold"
+    			android:textSize="16sp"
+    			android:textColor="#FFFFFF"
+    			/>	
+    		<TextView
+    			android:layout_height="fill_parent"
+    			android:layout_width="wrap_content"
+    			android:layout_weight="1"
+    			android:gravity="center"
+    			android:text="Frequency"
+    			android:textStyle="bold"
+    			android:textSize="16sp"
+    			android:textColor="#FFFFFF"
+    			/>		
+    </LinearLayout>
+    
+    <!-- Voltage table -->
+    <ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	>
+    <LinearLayout
+    		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		>
+				<TextView  
+				   android:layout_width="wrap_content" 
+				   android:layout_height="wrap_content" 
+				   android:id="@+id/mainOriginal"
+				   android:layout_weight="1"
+    			 android:gravity="left"
+    			 android:textSize="15sp"
+    			 
+			    />
+			  <TextView  
+				   android:layout_width="wrap_content" 
+				   android:layout_height="wrap_content" 
+				   android:id="@+id/mainCurrent"
+				   android:layout_weight="1"
+    			android:gravity="right"
+    			 android:textSize="15sp"
+			    />
+			  <TextView  
+				   android:layout_width="wrap_content" 
+				   android:layout_height="wrap_content" 
+				   android:id="@+id/mainFrequency"
+				   android:layout_weight="1"
+    			android:gravity="right"
+    			 android:textSize="15sp"
+			    />
+			</LinearLayout>
+			</ScrollView>
+		<!-- Frequency replacement -->
+	  <LinearLayout
+	  	android:orientation="horizontal"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	>
+	  		<EditText
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="1"
+	  			android:inputType="number"
+	  			android:id="@+id/replaceWhat"
+	  			android:hint="Replace"
+	  			/>
+	  		<EditText
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="1"
+	  			android:inputType="number"
+	  			android:id="@+id/replaceWith"
+	  			android:hint="With"
+	  			/>	
+	  		<Button
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="0"
+	  			android:id="@+id/applyButton"
+	  			android:text="Apply"
+	  			/>
+	  </LinearLayout>
+	  
+	  <!-- Bottom buttons -->
+	  <LinearLayout
+	  	android:orientation="horizontal"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	>
+	  		<Button
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="1"
+	  			android:id="@+id/increaseButton"
+	  			android:text="Increase by 5 mV"
+	  			/>
+	  		<Button
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="1"
+	  			android:id="@+id/decreaseButton"
+	  			android:text="Decrease by 5 mV"
+	  			/>
+	  		<Button
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="0"
+	  			android:id="@+id/resetButton"
+	  			android:text="Reset"
+	  			/>
+	  	</LinearLayout>	
+</LinearLayout>
